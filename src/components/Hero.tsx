@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import { GitBranch, Link2, Mail, ArrowDown, Sparkles, Download, MapPin } from 'lucide-react';
 import { personal } from '../data/portfolioData';
 
+const AVATAR_URL = `${import.meta.env.BASE_URL}avatar.jpg`;
+
+
 const TYPING_WORDS = [
   'Full Stack Engineer',
   'Cloud-Native Developer',
@@ -229,7 +232,7 @@ export default function Hero() {
                 <div className="w-full h-full rounded-[2.5rem] bg-gradient-to-br from-primary-500 via-purple-600 to-accent-400 p-1 shadow-2xl shadow-primary-500/40">
                   <div className="w-full h-full rounded-[2.25rem] overflow-hidden bg-slate-100 dark:bg-dark-700">
                     <img
-                      src="/avatar.jpg"
+                      src={AVATAR_URL}
                       alt="Phyo Zay Yar Kyaw — Full Stack Software Engineer"
                       className="w-full h-full object-cover object-top"
                     />
