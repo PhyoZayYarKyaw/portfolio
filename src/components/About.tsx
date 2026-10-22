@@ -2,15 +2,13 @@ import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
 import { MapPin, Mail, Phone, GitBranch, Link2, GraduationCap, Briefcase, Heart } from 'lucide-react';
 import { personal, education } from '../data/portfolioData';
-
-const AVATAR_URL = `${import.meta.env.BASE_URL}avatar.jpg`;
-
+import avatarImg from '../assets/avatar.jpg';
 
 export default function About() {
   const { ref, inView } = useInView(0.2);
 
   const stats = [
-    { label: 'Years Experience', value: '2+', icon: Briefcase },
+    { label: 'Years Experience', value: 'Over 2 Years', icon: Briefcase },
     { label: 'Projects Delivered', value: '4+', icon: Heart },
     { label: 'Technologies', value: '15+', icon: GraduationCap },
   ];
@@ -50,12 +48,9 @@ export default function About() {
                 <div className="w-44 h-44 rounded-3xl bg-gradient-to-br from-primary-500 via-purple-600 to-accent-400 p-1 shadow-2xl shadow-primary-500/40">
                   <div className="w-full h-full rounded-3xl bg-slate-100 dark:bg-dark-700 overflow-hidden">
                     <img
-                      src={AVATAR_URL}
+                      src={avatarImg}
                       alt="Phyo Zay Yar Kyaw"
                       className="w-full h-full object-cover object-center"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).style.display = 'none';
-                      }}
                     />
                   </div>
                 </div>
@@ -63,7 +58,7 @@ export default function About() {
                 <div className="absolute -bottom-3 -right-3 px-3 py-1.5 rounded-xl
                                 bg-gradient-to-r from-primary-500 to-purple-600 text-white text-xs font-bold
                                 shadow-lg shadow-primary-500/40">
-                  Full Stack
+                  Senior Engineer
                 </div>
                 {/* Online indicator */}
                 <div className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-emerald-400 border-2 border-white dark:border-dark-800 shadow-lg" />

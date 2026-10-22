@@ -33,7 +33,7 @@ export default function Footer() {
                 <span className="text-slate-600">.</span>
               </span>
             </div>
-            <p className="text-sm text-slate-500">Full Stack Software Engineer</p>
+            <p className="text-sm text-slate-500">{personal.title}</p>
             <p className="text-xs text-slate-600 mt-1">{personal.location}</p>
           </motion.div>
 

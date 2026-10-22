@@ -2,11 +2,10 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { GitBranch, Link2, Mail, ArrowDown, Sparkles, Download, MapPin } from 'lucide-react';
 import { personal } from '../data/portfolioData';
-
-const AVATAR_URL = `${import.meta.env.BASE_URL}avatar.jpg`;
-
+import avatarImg from '../assets/avatar.jpg';
 
 const TYPING_WORDS = [
+  'Senior Software Engineer',
   'Full Stack Engineer',
   'Cloud-Native Developer',
   'FastAPI & AWS Expert',
@@ -160,6 +159,7 @@ export default function Hero() {
               </button>
               <a
                 href={personal.resumeUrl}
+                download="Phyo-Zay-Yar-Kyaw-CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-medium
@@ -232,8 +232,8 @@ export default function Hero() {
                 <div className="w-full h-full rounded-[2.5rem] bg-gradient-to-br from-primary-500 via-purple-600 to-accent-400 p-1 shadow-2xl shadow-primary-500/40">
                   <div className="w-full h-full rounded-[2.25rem] overflow-hidden bg-slate-100 dark:bg-dark-700">
                     <img
-                      src={AVATAR_URL}
-                      alt="Phyo Zay Yar Kyaw — Full Stack Software Engineer"
+                      src={avatarImg}
+                      alt="Phyo Zay Yar Kyaw — Senior Software Engineer"
                       className="w-full h-full object-cover object-top"
                     />
                   </div>
@@ -247,7 +247,7 @@ export default function Hero() {
                   className="absolute -left-6 top-8 glass-card px-3 py-2 shadow-xl"
                   id="hero-chip-role"
                 >
-                  <p className="text-xs font-bold text-slate-800 dark:text-white">Full Stack Dev</p>
+                  <p className="text-xs font-bold text-slate-800 dark:text-white">Senior Software Eng</p>
                   <p className="text-xs text-primary-500">Myanmar Info Tech</p>
                 </motion.div>
 
@@ -260,7 +260,7 @@ export default function Hero() {
                   id="hero-chip-exp"
                 >
                   <p className="text-xs text-slate-500 dark:text-slate-400">Experience</p>
-                  <p className="text-sm font-extrabold gradient-text">2+ Years</p>
+                  <p className="text-sm font-extrabold gradient-text">Over 2 Years</p>
                 </motion.div>
 
                 {/* Floating chip: Tech */}

@@ -4,17 +4,17 @@
 
 export const personal = {
   name: 'Phyo Zay Yar Kyaw',
-  title: 'Full Stack Software Engineer',
+  title: 'Senior Software Engineer',
   subtitle: 'Cloud-Native & AI Developer',
   tagline: 'Building scalable cloud-native solutions with FastAPI, AWS & Angular',
   location: 'Yangon, Myanmar',
   email: 'kophyozayarkyaw@gmail.com',
   phone: '09-788420307',
   github: 'https://github.com/PhyoZayYarKyaw',
-  linkedin: 'https://www.linkedin.com/in/phyo-zay-yar-kyaw-a9b894189',
-  resumeUrl: 'https://drive.google.com/uc?export=download&id=1EW058LRcZsf9iHNkn6NWkzLN9jvbaL0J',
+  linkedin: 'https://www.linkedin.com/in/phyo-zay-yar-kyaw',
+  resumeUrl: '/Phyo-Zay-Yar-Kyaw-CV.pdf',
   avatar: null,
-  bio: `Full Stack Software Engineer with 2 years of experience developing cloud-native web applications using Python, FastAPI, AWS Lambda, AWS SAM, Angular, and PostgreSQL. Experienced in designing scalable REST APIs, automating business workflows, and building enterprise solutions for real-time data management.`,
+  bio: `Senior Software Engineer with over 2 years of experience developing cloud-native web applications using Python, FastAPI, AWS Lambda, AWS SAM, Angular, and PostgreSQL. Experienced in designing scalable REST APIs, automating business workflows, and building enterprise solutions for real-time data management.`,
   bioExtended: `Passionate about Artificial Intelligence, Machine Learning, and cloud technologies, with a strong commitment to continuous learning and delivering impactful software solutions. Seeking opportunities to contribute technical expertise while growing as an AI and Cloud Engineer.`,
 };
 
@@ -30,7 +30,7 @@ export const education = [
 export const experience = [
   {
     id: 'mit-2024',
-    role: 'Full Stack Developer',
+    role: 'Senior Software Engineer',
     company: 'Myanmar Information Technology',
     period: '06/2024 – Present',
     location: 'Yangon, Myanmar',
